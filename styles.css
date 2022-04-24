@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500;600&display=swap');
+
+.home {
+    height: 90vh;
+    background-image: url("./images/bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    color: white
+}
+.home .container {
+    position: absolute;
+    left: 88px;
+    width: 50vw;
+    height: 70vh;
+    text-align: justify;
+    text-justify: inter-word;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.socials{
+    display: flex;
+    gap: 15px;
+    filter: invert(100%);
+}
+
+.facebookLogo, .instagramLogo{
+    height: 40px;
+    cursor: pointer;
+}
+.fa-instagram{
+    color: wheat;
+}
+.home h1 {
+    font-size: 110px;
+}
+
+.home h3 {
+    font-size: 25px;
+    font-weight: 100;
+}
+
+body {
+    background-image: linear-gradient(180deg, #878585, #000000);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Readex Pro', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    color:white;
+    scroll-behavior: smooth;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    font-size: 25px;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: sticky;
+  top: 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    margin-right: 6px;
+}
+.threePic{
+    display: flex;
+    justify-content: space-around;
+}
+
+.gallery .galleryContainer .threePic img{
+    width: 100%;
+    padding: 10px;
+}
+.classH1{
+    font-size: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.moreImage{
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    
+   
+}
+.gallery .galleryContainer .moreImage img{
+    padding-left: 10px;
+    
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+}
+
+nav div a,
+nav ul a {
+    color: white;
+}
+
+nav div a:active,
+nav ul a:active {
+    color: royalblue;
+}
+.gallery{
+    min-height: 95vh;
+    padding-top: 5vh;
+    display: flex;
+    justify-content: center;
+    
+}
+.galleryContainer{
+    background-color: rgba(207, 151, 7, 0.15);
+    width: 100%;
+    padding:20px;
+    border-radius: 10px;
+}
+.gal{
+    width: 95%;
+   
+    margin: 100px;
+}
+
+.moreImage::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(150,101,56,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+.moreImage::-webkit-scrollbar
+{
+    height: 10px;
+	background-color: #F5F5F5;
+}
+
+.moreImage::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(150,101,56,0.3);
+	background-color: rgba(150,101,56);
+}
+.productSection{
+    display: flex;
+    justify-content: center;
+}
+.products{
+    width: 100%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+}
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 90vh;
+    gap: 20px;
+}
+.footer{
+    width: 100%;
+    display: flex;
+    height: 20vh;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #966538;
+    padding: 20px;
+}
+.left{
+    display: flex;
+    justify-content: center;
+}
+body::-webkit-scrollbar {
+    display: none;
+  }
+.bean{
+width: 609px;
+height: 609px;
+}
+.about{
+    background-image: url("./images/bean.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.right{
+    display: flex;
+    justify-content: center;    
+}
+.kapenysLogo{
+    width: 300px;
+}
+@media only screen and (max-width: 1150px) {
+    .gallery .galleryContainer .moreImage img{
+        height: 350px;
+    }
+  }
+  @media only screen and (max-width: 1000px) {
+    .gallery .galleryContainer .moreImage img{
+        height: 320px;
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    .gallery .galleryContainer .moreImage img{
+        height: 300px;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .gallery .galleryContainer .moreImage img{
+        height: 250;
+    }
+  }
